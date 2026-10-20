@@ -1,5 +1,13 @@
 def calcular_medidas(base: float, altura: float) -> tuple[float, float]:
 
+    """
+    Calcula las medidas de area y perimetro
+
+    :param base: el numero de la base introducido por el usuario
+    :param altura: el numero de la altura introducido por el usuario
+    :return: devuelve una tupla de el area del rectangulo y su perimetro
+    """
+
     area: float = base * altura
     perimetro: float = (base + altura) * 2
 
@@ -7,6 +15,17 @@ def calcular_medidas(base: float, altura: float) -> tuple[float, float]:
 
 
 def determinar_forma(base: float, altura: float) -> str:
+
+    """
+    Determina la forma del rectángulo viendo las 
+
+    :param base: el numero de la base introducido por el usuario
+    :param altura: el numero de la altura introducido por el usuario
+    :return: Devuelve la forma 
+    """
+
+
+    
     if base == altura:
         return "cuadrado"
 
@@ -20,6 +39,7 @@ def determinar_forma(base: float, altura: float) -> str:
 
 
 def main():
+    """Función principal"""
 
     base: float = float(input("Escribe la base de un rectángulo: "))
     altura: float = float(input("Escribe la altura de un rectángulo: "))
